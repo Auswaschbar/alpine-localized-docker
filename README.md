@@ -26,6 +26,17 @@ Either use this image as a base, or copy the two steps from this dockerfile into
 - in C(++), using `newlocale()` also works
 - either way, as of now, musl requires you to use the full locale name like _de_DE.UTF-8_. Using just _de_DE_ doesn't seem to work
 
+## Creating or modifying locales
+
+Per default, locales are maintained and pulled from https://gitlab.com/rilian-la-te/musl-locales.
+Currently, the selection of locales is very limited and incomplete, but you are welcome to create your own.
+To do so, clone that repository, modify the existing .po files or create a new one.
+
+Then, you can:
+
+- test your new creations by changing the repository address inside the Dockerfile to your own clone
+- make a merge request upstream
+
 # Credits
 
-Konstantin from https://gitlab.com/rilian-la-te/musl-locales for the locale program. If you create new locales, please push them there.
+Konstantin from https://gitlab.com/rilian-la-te/musl-locales for the locale program.
