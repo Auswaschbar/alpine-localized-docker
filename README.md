@@ -28,15 +28,10 @@ Either use this image as a base, or copy the two steps from this dockerfile into
 
 ## Creating or modifying locales
 
-Per default, locales are maintained and pulled from https://gitlab.com/rilian-la-te/musl-locales.
-Currently, the selection of locales is very limited and incomplete, but you are welcome to create your own.
-To do so, clone that repository, modify the existing .po files or create a new one.
-
-Then, you can:
-
-- test your new creations by changing the repository address inside the Dockerfile to your own clone
-- make a merge request upstream
+Locales for Alpine Linux are maintained on https://git.adelielinux.org/adelie/musl-locales (fork of https://gitlab.com/rilian-la-te/musl-locales). Currently, the selection of locales is limited and incomplete, but you are welcome to create and contribute your own, you can find more info on that repo.
 
 # Credits
 
-Konstantin from https://gitlab.com/rilian-la-te/musl-locales for the locale program.
+* Konstantin for the original program: https://gitlab.com/rilian-la-te/musl-locales
+* Adelie Linux for the fork
+* Alpine Linux for the packaging
